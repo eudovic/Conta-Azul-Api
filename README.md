@@ -69,8 +69,8 @@ Agora, em posse do token é possivel fazer as requisições usando o método aba
 ```php
   $request=$apiContaazul->request($endpoint,$parametros,$token,$metodo);
 ````
-$endpoint // endpoint de consulta
-$parametros // parametros enviados ao request
-$token // token gerado
-$metodo // get-post-put-delete
+- $endpoint // endpoint de consulta
+- $parametros // parametros enviados ao request
+- $token // token gerado
+- $metodo // get-post-put-delete
 

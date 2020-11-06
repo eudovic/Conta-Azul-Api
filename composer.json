@@ -1,0 +1,22 @@
+{
+    "name": "eudovic/contaazul",
+    "version": "1.0",
+    "description": "ContaAzul API library",
+    "keywords": ["api","contaazul"],
+    "require": {
+        "php": ">=5.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Emerson Udovic",
+            "email": "eudovic3d@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Eudovic\\ContaAzul\\": "src/"
+        },
+        "classmap": ["src/"]
+    }
+}

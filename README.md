@@ -1,6 +1,9 @@
 # CONTA AZUL API
 Esta estrutura trata a integração com a api da conta azul, fornecendo métodos para autenticação, e request aos endpoint desejados.
 
+## INSTALAÇÃO
+composer require eudovic/contaazul:dev-master
+
 ## COMO USAR
 #### CRIANDO A APLICAÇÃ0
 O primeiro passo é criar uma apicação no portal de desenvolvedores da conta azul através do seguinte link https://portaldevs.contaazul.com/.

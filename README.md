@@ -40,7 +40,7 @@ use ContaAzul\Helpers\Helpers;
 //VARIÁVEIS NECESSÁRIAS PARA INICIALIZAÇÃ0
 $client_id="SEU_CLIENT_ID";
 $client_secret="SEU_SECRET_ID";
-$redirect_uri=$_SERVER['SCRIPT_URI'];// pega a url atual para negociar os pedidos da URL de redirecionamento.
+$redirect_uri="URL_DE_REDIRECIONAMENTO";// pega a url atual para negociar os pedidos da URL de redirecionamento.
 $scope="sales";
 $state=Helpers::generateRandomString(16);
 

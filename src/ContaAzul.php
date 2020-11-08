@@ -7,20 +7,19 @@ use ContaAzul\Auth\Auth;
 
 class ContaAzul
 {
-    public $client_id;
-    public $client_secret;
-    public $redirect_uri;
-    public $auth_endpoint;
-    public $scope;
-    public $state;
-		public $apiRequest;
-		public $authHeader;
-		public $authCode;
-
-    public $access_token;
-    public $expires_in;
-    public $refresh_token;
-    public $date_register;
+	public $client_id;
+	public $client_secret;
+	public $redirect_uri;
+	public $auth_endpoint;
+	public $scope;
+	public $state;
+	public $apiRequest;
+	public $authHeader;
+	public $authCode;
+	public $access_token;
+	public $expires_in;
+	public $refresh_token;
+	public $date_register;
 	
     
 
@@ -45,7 +44,6 @@ class ContaAzul
 			
 		}
 		public function requestRefreshedToken($resfreh_token){
-			$this->authCode=$code;
 			$auth=new Auth($this);
 			$token=$auth->refreshToken($resfreh_token);
 			return $token;

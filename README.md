@@ -77,3 +77,6 @@ Agora, em posse do token é possivel fazer as requisições usando o método aba
 - $token // token gerado
 - $metodo // get-post-put-delete
 
+######OBS
+use o metodo **postjson** para apostar jason com raw data
+

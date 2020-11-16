@@ -57,6 +57,30 @@ class ApiRequests{
 			return $result;
 		//	return $resp;
 	}
+	
+	public function postjson($endpoint,$parametros){
+			$header=$this->headers;
+			$header[]='Content-Type:application/json';
+			$url_feed=$this->baseUrl.$endpoint;
+			
+			$curlp = curl_init(); 
+			curl_setopt_array($curlp, array(
+				CURLOPT_RETURNTRANSFER => true,
+				CURLOPT_URL => $url_feed,
+			 // CURLOPT_USERAGENT => 'Codular Sample cURL Request',
+				CURLOPT_POST =>true,
+				CURLOPT_POSTFIELDS => json_encode($parametros),
+				CURLOPT_VERBOSE=> true,
+				CURLOPT_HTTPHEADER =>$header
+
+			)); 
+			// Send the request & save response to $resp
+			$result = curl_exec($curlp);;
+			curl_close($curlp);
+			Helpers::isJson($result)==0 ? $result = json_decode($result) :null;
+			return $result;
+		//	return $resp;
+	}
 
 	public function put($endpoint,$parametros){
 

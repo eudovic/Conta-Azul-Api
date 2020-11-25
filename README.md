@@ -75,8 +75,8 @@ Agora, em posse do token é possivel fazer as requisições usando o método aba
 - $endpoint // endpoint de consulta
 - $parametros // parametros enviados ao request
 - $token // token gerado
-- $metodo // get-post-put-delete
+- $metodo // get-post-put-delete-postjson(para post com json como raw data)-putjson(para put com json como raw data)
 
 ######OBS
-use o metodo **postjson** para apostar jason com raw data
+use o metodo **postjson** para postar json com raw data
 

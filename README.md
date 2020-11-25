@@ -16,7 +16,7 @@ No entanto, não se preocupe com toda esta troca de informações, pois esta bib
 
 #### USANDO A BIBLIOTECA
 ###### INICIANDO A AUTENTICAÇÃO
-Primeiramente é preciso fazer a chamada de início do precesso de autenticação. Pra isso é preciso invocar a seguinte URL.
+Primeiramente é preciso fazer a chamada de início do processo de autenticação. Pra isso é preciso invocar a seguinte URL.
 https://api.contaazul.com/auth/authorize?redirect_uri={REDIRECT_URI}&client_id={CLIENT_ID}&scope=sales&state={STATE}
 
 Abaixo uma descrição de cada um dos parâmetros.
